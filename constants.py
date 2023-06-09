@@ -1,0 +1,44 @@
+import pygame as pg
+
+pg.font.init()
+
+WIDTH, HEIGHT = 1000, 600
+CONTROLS = 250
+SIZE = HEIGHT // 40
+WEIGHT_BOUND = 1000
+ARROW = SIZE
+FPS = 60
+PAD = HEIGHT // 100
+
+BUTTON = CONTROLS // 4
+
+BLACK = 0, 0, 0
+WHITE = 255, 255, 255
+RED = 255, 0, 0
+GREEN = 0, 255, 0
+BLUE = 0, 0, 255
+YELLOW = 255, 255, 0
+CYAN = 0, 255, 255
+PURPLE = 255, 0, 255
+
+LIGHT_PINK = 247, 223, 247
+PINK = 252, 207, 252
+
+LIGHT_BLUE = 200, 200, 255
+SKY_BLUE = 119, 168, 247
+
+LIGHT_GREEN = 207, 250, 214
+LIME = 213, 255, 115
+
+LIGHT_GREY = 200, 200, 200
+GREY = 128, 128, 128
+
+LIGHT_RED = 250, 191, 185
+
+FONT = pg.font.SysFont("Arial", HEIGHT // 20)
+
+O1 = "O(1)"
+ON = "O(n)"
+ON2 = "O(n\u00b2)"
+ONLN = "O(nlog(n))"
+TXT = "where n is the number of elements"
