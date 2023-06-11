@@ -34,7 +34,9 @@ def main():
                     [cs.FONT.render("O(nlog(n)) time", True, cs.WHITE), cs.FONT.render("O(log(n)) space",
                                                                                        True, cs.WHITE)] + n,
                     [cs.FONT.render("O(nlog(n)) time", True, cs.WHITE), cs.FONT.render("O(n) space",
-                                                                                       True, cs.WHITE)] + n
+                                                                                       True, cs.WHITE)] + n,
+                    [cs.FONT.render("O(nlog(n)) time", True, cs.WHITE), cs.FONT.render("O(1) space", True,
+                                                                                       cs.WHITE)] + n
                     ]
 
     back_text = cs.FONT.render("BACK", True, cs.WHITE, cs.RED)
@@ -162,7 +164,7 @@ def main():
                     heap_sort.start()
                     start = True
                     algorithm = wrap_text("Heap Sort:", cs.FONT, cs.CONTROLS, cs.BLACK, cs.WHITE)
-                    algo_complexity = 1
+                    algo_complexity = 3
 
                 if event.key == pg.K_TAB:
                     sort.reverse()
